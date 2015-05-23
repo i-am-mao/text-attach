@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>フォームからテキストファイルアップロード後に添付メール送信</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="wrap">
+	<h1>フォームから画像アップロード後に添付メール送信</h1>
+	<hr>
+	<div id="catalog">
+		<h2>目録</h2>
+		<ul>
+			<li><a href="#one">必要なファイル</a></li>
+			<li><a href="#two">form.htmlの解説</a></li>
+			<li><a href="#three">sendmail.phpの解説</a></li>
+			<li><a href="#four">注意点</a></li>
+		</ul>
+	</div>
+	<hr>
+	<div id="one" class="text">
+		<h2>１．必要なファイル</h2>
+		<ul>
+			<li>form.html</li>
+			<li>sendmail.php</li>
+		</ul>
+		
+		<p>両ファイルとも必要最低限の内容となっていますので、<br>
+			必要に応じて使いやすいよう改編してください</p>
+	</div>
+	
+	<hr>
+	
+	<div id="two" class="text">
+		<h2>２．form.phpの解説</h2>
+		<p>画像をアップロードさせる&lt;input type=&quot;file&quot;&gt;を動作させるには、<br>
+			&lt;form ～内のenctype=&quot;multipart/form-data&quot;は<strong>必須ですので絶対に削除しないでください</strong>
+			<img src="../画像版/image/2.gif" width="854" height="97">
+		</p>
+	</div>
+
+	<hr>
+	
+	<div id="three" class="text">
+		<h2>３．sendmail.phpの解説</h2>
+		<p>sendmail.phpは実際にアップロードした画像を取得し、メールを飛ばすファイルです<br>
+			メールが無事送信されれば、"送信成功"と表示され、失敗すると"送信失敗"と表示されます
+		</p>
+		
+		<P>追記する部分は自分のメールアドレスのみです
+		<img src="../画像版/image/3-1.gif" width="435" height="117">
+		</P>
+	</div>
+	
+	<hr>
+	
+	<div id="four" class="text">
+		<h2>４。注意点</h2>
+		
+		
+		<h3>4-1</h3>
+			<ul>送信できるファイルは以下の通りです
+				<li>docx</li>
+				<li>xlsx</li>
+				<li>pptx</li>
+				<li>txt</li>
+				<li>css</li>
+				<li>PHP</li>
+				<li>js</li>
+				<li>ai</li>
+				<li>html</li>
+				<li>ttf</li>
+				<li>mp3</li>
+				<li>wlmp</li>
+			</ul>
+		<p><img src="image/4-1.gif" width="600" height="289"></p>
+	</div>
+	
+	<hr>
+	
+	<div class="text">
+		<p>動作環境<br>
+			動作OS：Windows 7<br>
+			ブラウザ:chorome/opera/firefox/safari/IE7.8.9<br>
+			PHP:PHP 5.2.17 (CGI版)
+		</p>
+	</div>
+</div>
+</body>
+</html>

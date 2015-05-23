@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>テキストファイル添付メール</title>
+<script>
+	function cText(obj){
+	if(obj.value==obj.defaultValue){
+	obj.value="";
+	obj.style.color="#000";
+	}
+	}
+	
+	function sText(obj){
+	if(obj.value==""){
+	obj.value=obj.defaultValue;
+	obj.style.color="#999";
+	}
+	}
+</script>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="form">
+	<form method="POST" action="" enctype="multipart/form-data">
+	<input type="text" name="email" id="email" value="メールアドレス" onFocus="cText(this)" onBlur="sText(this)">
+	<input type="file" name="txt">
+	<input type="submit" id="submit" value="送信">
+	</form>
+</div>
+</body>
+</html>
